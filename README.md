@@ -22,19 +22,19 @@ ScreenShort :
 
 <h2>🛠️ Installation Steps: </h2>
 <p>
-  1. Download & Install K6.
+  1. Download & Install ` K6 `.
 
 2. Download collection & Environment file from here.
 
 3. Open those file in VS code.
 
 4. Run the project in Terminal.
-5. 
-6. Run the code out write down - `<b>k6 run 'project_name'</b>`
 
-7. Genarate to CSV file write down - `<b>k6 run 'project_name' --out csv='file_name'.csv </b>`
+5. Run the code out write down - `<b>k6 run 'project_name'</b>`
 
-8. Genarate to JSON file write down - `<b>k6 run 'project_name' --out json='file_name'.json </b>`
+6. Genarate to CSV file write down - `<b>k6 run 'project_name' --out csv='file_name'.csv </b>`
+
+9. Genarate to JSON file write down - `<b>k6 run 'project_name' --out json='file_name'.json </b>`
 
  ## Multiple outputs
 
