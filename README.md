@@ -16,7 +16,8 @@ ScreenShort :
 - API Testing.
 - Result Summary
 - Genarate CSV file.
-- Genarate Json
+- Genarate Json.
+- There have a GUI and Non-GUI outputs.
 </p>
 
 <h2>🛠️ Installation Steps: </h2>
@@ -28,10 +29,29 @@ ScreenShort :
 3. Open those file in VS code.
 
 4. Run the project in Terminal.
-5. Run the code out write down - <b>k6 run 'project_name'</b>
-6. Genarate the 
+5. 
+6. Run the code out write down - `<b>k6 run 'project_name'</b>`
 
-7. To generate HTML report install <b>Newman</b> in your OS
+7. Genarate to CSV file write down - `<b>k6 run 'project_name' --out csv='file_name'.csv </b>`
+
+8. Genarate to JSON file write down - `<b>k6 run 'project_name' --out json='file_name'.json </b>`
+
+ ## Multiple outputs
+
+If you want more control over the output produced or to output the summary into multiple places (including stdout), just combine the result of htmlReport with other summary generators, as follows:
+
+```js
+// This will export to HTML as filename "result.html" AND also stdout using the text summary
+import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
+import { textSummary } from "https://jslib.k6.io/k6-summary/0.0.1/index.js";
+
+export function handleSummary(data) {
+  return {
+    "result.html": htmlReport(data),
+    stdout: textSummary(data, { indent: " ", enableColors: true }),
+  };
+}
+``` 
 </p>
 
 <h2>💻 Built with: </h2>
