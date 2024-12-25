@@ -40,7 +40,7 @@ ScreenShort :
 
 If you want more control over the output produced or to output the summary into multiple places (including stdout), just combine the result of htmlReport with other summary generators, as follows:
 
-```js
+```js 
 // This will export to HTML as filename "result.html" AND also stdout using the text summary
 import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
 import { textSummary } from "https://jslib.k6.io/k6-summary/0.0.1/index.js";
