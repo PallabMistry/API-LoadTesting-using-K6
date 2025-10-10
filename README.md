@@ -32,10 +32,11 @@ ScreenShort :
 
 5. Run the code out write down - `<b>k6 run 'project_name'</b>`
      *Make sure that you are in the Directory folder, OR haven't run the code.
+  ex ~ `PS E:\Performance_testingK6\API_performancetest> k6 run loadtest.js`
 
 6. Genarate to CSV file write down - `<b>k6 run 'project_name' --out csv='file_name'.csv </b>`
 
-8. Genarate to JSON file write down - `<b>k6 run 'project_name' --out json='file_name'.json </b>`
+7. Genarate to JSON file write down - `<b>k6 run 'project_name' --out json='file_name'.json </b>`
 
  ## Multiple outputs
 
