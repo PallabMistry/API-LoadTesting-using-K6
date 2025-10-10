@@ -31,10 +31,11 @@ ScreenShort :
 4. Run the project in Terminal.
 
 5. Run the code out write down - `<b>k6 run 'project_name'</b>`
+     *Make sure that you are in the Directory folder, OR haven't run the code.
 
 6. Genarate to CSV file write down - `<b>k6 run 'project_name' --out csv='file_name'.csv </b>`
 
-9. Genarate to JSON file write down - `<b>k6 run 'project_name' --out json='file_name'.json </b>`
+8. Genarate to JSON file write down - `<b>k6 run 'project_name' --out json='file_name'.json </b>`
 
  ## Multiple outputs
 
