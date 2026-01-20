@@ -25,6 +25,7 @@ ScreenShort :
   1. Download & Install ` K6 `.
 
 2. Download collection & Environment file from here.
+       choco --version
 
 3. Open those file in VS code.
 
