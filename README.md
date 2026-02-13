@@ -65,6 +65,7 @@ export function handleSummary(data) {
 - VS Code
 - HTML
 - Json
+- Browser, like-chrome, firefox etc.
 </p>
 
 
